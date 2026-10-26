@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Digital Closet</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="allMyItems">My Closet</h1>
+<% if (items.length === 0) { %>
+    <div class="">
+        <a href="/closet/new" class="button">
+          <span class="fa fa-plus"></span>add  
+        </a>
+    </div>
+    <% } else { %>
+        <div class="closetFormat">
+        <% items.forEach(function(item) { %>
+            <div class="itemsInCloset">
+            <div><%= item.name %></div>
+            <div><%= item.brand %></div>
+            <div><%= item.color %></div>
+            <div><%= item.imageURL %></div>
+            <div><%= item.category %></div>
+            <a href="/closet/<%= item._id %>/edit" class="button">
+                <span class="fa fa-plus"></span>Edit Item  
+            </a>
+            </div>
+        <% }) %>
+        </div>
+    <% } %>
+
+<script src="main.js"></script>
+</body>
+</html>

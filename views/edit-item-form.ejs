@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+    <title>My Digital Closet</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+<div class="col-sm-6 col-sm-offset-3">
+    <form method="POST" action="/closet/<%= item._id %>/update"> 
+        <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="name" value="<%= item.name %>" required>
+        </div>
+         <div class="form-group">
+            <label>Color</label>
+            <input type="text" class="form-control" name="color" value="<%= item.color %>" required>
+        </div>
+         <div class="form-group">
+            <label>Brand</label>
+            <input type="text" class="form-control" name="brand" value="<%= item.brand %>" required>
+        </div>
+         <div class="form-group">
+            <label>Image</label>
+            <input type="text" class="form-control" name="imageURL" value="<%= item.imageURL %>" required>
+        </div>
+         <div class="form-group">
+            <label>Category</label>
+            <input type="text" class="form-control" name="category" value="<%= item.category %>" required>
+        </div>
+        <button type="submit" class="updateButton">Update</button>
+        <a href="/closet" class="myClosetButtonEdit">My Closet</a>
+    </form>
+    <form method="POST" action="/closet/<%= item._id %>/delete" class="inline-form">
+            <button type="submit" class="deleteButton"><span class= "fa fa-trash"></span>Delete</button>
+        </form>
+<script src="main.js"></script>
+</body>
+</html>
