@@ -1,11 +1,7 @@
 Digital Closet App 👗
 
 
-Digital Closet App is a web-based application that allows users to build and manage their own digital wardrobe. Users can add clothing and shoe items, view their closet, edit existing items, and delete items they no longer need.
-
-Each item includes details such as its name, color, brand, image URL, and category, making it easy to organize and keep track of personal belongings.
-
-Users can also create an account, log in, and manage their own digital closet through a private profile.
+Digital Closet App is a web-based application that allows users to build and manage their own digital wardrobe. Users can add clothing and shoe items, view their closet, edit existing items, and delete items they no longer need. Each item includes details such as its name, color, brand, image URL, and category, making it easy to organize and keep track of personal belongings. Users can also create an account, log in, and manage their own digital closet through a private profile.
 
 Features
 User Authentication: Sign up and log in using Passport.js to access a personal digital closet.
