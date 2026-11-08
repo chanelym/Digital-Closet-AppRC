@@ -12,10 +12,10 @@ Delete Items: Easily remove items from your digital closet.
 Personal Closet: Manage and organize your own collection of clothing and shoes.
 
 ## Tech Stack
-Frontend: EJS, HTML, CSS, JavaScript, Bootstrap
-Backend: Node.js, Express.js
-Database: MongoDB Atlas with Mongoose
-Authentication: Passport.js
+Frontend: EJS, HTML, CSS, JavaScript, Bootstrap. 
+Backend: Node.js, Express.js. 
+Database: MongoDB Atlas with Mongoose. 
+Authentication: Passport.js. 
 
 ## What I Learned
 Structuring an Express.js application using the MVC architecture, separating database operations, application logic, and user interface components to create more organized and maintainable code.
